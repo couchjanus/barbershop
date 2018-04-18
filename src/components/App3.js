@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 
-// import './App.scss';
 import styles from './App.scss';
-class App extends Component {
- 
+
+import ServiseList from './servises/ServiseList'; 
+
+
+class App3 extends Component {
+    
   render() {
     const headerStyle = {
       color: '#fff',
@@ -17,13 +20,16 @@ class App extends Component {
           <img src={logo} className={styles.AppLogo} alt="logo" />
           <h1 className={styles.AppTitle}>Welcome to React Component</h1>
         </header>
+        <h2>It is {new Date().toLocaleTimeString()}.</h2>
         <p className={styles.AppIntro}>
           To get started, edit <code style={headerStyle}>src/components/App.js</code> and save to reload.
         </p>
-        
+
+        <ServiseList />;
+
       </div>
     );
   }
 }
 
-export default App;
+export default App3;

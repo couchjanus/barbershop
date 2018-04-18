@@ -5,5 +5,8 @@ import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 import './index.scss';
 
-ReactDOM.render(<h1>Hello React!</h1>, document.getElementById('root'));
+const element = <h1>Hello React element!</h1>;
+
+ReactDOM.render(element, document.getElementById('root'));
+
 registerServiceWorker();
