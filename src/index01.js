@@ -1,10 +1,16 @@
-import React from 'react';
+// import React from 'react';
+
+import React, { Component } from 'react';
+
 import ReactDOM from 'react-dom';
 
-import './index.css';
+// import './index.css';
+import App from './components/App';
+
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<h1>Hello React!</h1>, document.getElementById('root'));
+
+// ReactDOM.render(<h1>Hello React!</h1>, document.getElementById('root'));
 
 
 // const element = <h1>Hello React element!</h1>;
@@ -35,7 +41,7 @@ ReactDOM.render(<h1>Hello React!</h1>, document.getElementById('root'));
 //   }
 
 
-// ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 
 registerServiceWorker();
