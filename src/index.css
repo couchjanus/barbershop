@@ -1,5 +1,34 @@
-body {
-  margin: 0;
+ul {
+  list-style: none;
   padding: 0;
-  font-family: sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.flex-menu li {
+  width: 100%;
+}
+.flex-menu a {
+  color: white;
+  display: block;
+  padding: 1rem 1rem;
+  background: #333;
+  transition: .5s;
+}
+.flex-menu a:hover {
+  background: #424242;
+}
+@media screen and (min-width: 600px) {
+  .flex-menu {
+    flex-direction: row;
+  }
 }

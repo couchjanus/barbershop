@@ -1,17 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-// import App3 from './components/App3';
-
-import './index.css';
-import './index.scss';
-
+// import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<h1>Hello React!</h1>, document.getElementById('root'));
+import App from './components/App';
 
-// 
 
-// ReactDOM.render(<App3 />, document.getElementById('root'));
+
+render((
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+), document.getElementById('root'));
+
 
 registerServiceWorker();
