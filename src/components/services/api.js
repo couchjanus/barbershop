@@ -7,9 +7,11 @@ const ServiceAPI = {
     { id: 5, name: "Cats СТРИЖКА", price: 123 },
     { id: 6, name: "Girls СТРИЖКА", price: 231 }
   ],
-  all: function() { return this.services},
+  all: function() { 
+    return this.services;
+  },
   get: function(id) {
-    const isService = p => p.id === id
+    const isService = p => p.id === id;
     return this.services.find(isService);
   }
 };

@@ -3,6 +3,8 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Services from './Services';
+import BarberList from './barbers/BarberList';
+// import BarbersContainer from './barbers';
 import Contact from './Contact';
 
 const Main = () => (
@@ -11,6 +13,7 @@ const Main = () => (
       <Route exact path='/' component={Home}/>
       <Route path='/about' component={About}/>
       <Route path='/services' component={Services}/>
+      <Route path='/barbers' component={BarberList}/>
       <Route path='/contact' component={Contact}/>
     </Switch>
   </main>
