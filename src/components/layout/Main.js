@@ -1,11 +1,9 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Services from './Services';
-import BarberList from './barbers/BarberList';
-// import BarbersContainer from './barbers';
-import Contact from './Contact';
+import {Home, About, Contact} from '../pages';
+
+import Services from '../services';
+import Barbers from '../barbers';
 
 const Main = () => (
   <main>
@@ -13,7 +11,7 @@ const Main = () => (
       <Route exact path='/' component={Home}/>
       <Route path='/about' component={About}/>
       <Route path='/services' component={Services}/>
-      <Route path='/barbers' component={BarberList}/>
+      <Route path='/barbers' component={Barbers}/>
       <Route path='/contact' component={Contact}/>
     </Switch>
   </main>

@@ -1,8 +1,35 @@
 const BarberAPI = {
     barbers: [
-        {id:1, name:'Roman', available:true},
-        {id:2, name:'Michael', available:true},
-        {id:3, name:'Danylo', available:true}
+        {
+          id:1, 
+          name:'Roman', 
+          available:true,
+          clients: [
+            'Jake Lingwall',
+            'Sarah Drasner',
+            'Merrick Christensen'
+          ]
+        },
+        {
+          id:2, 
+          name:'Michael', 
+          available:true,
+          clients: [
+            'John Drasner',
+            'Ban Lingwall',
+            'Met Lee'
+          ]
+        },
+        {
+          id:3, 
+          name:'Danylo', 
+          available:true,
+          clients: [
+            'Chris Jake ',
+            'Sarah Lingwall',
+            'Nim Chris'
+          ]
+        }
       ],
   all: function() { 
     return this.barbers;

@@ -1,3 +1,3 @@
-import BarbersContainer from './Barbers';
+import Barbers from './Barbers';
 
-export default BarbersContainer;
+export default Barbers;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import ServiceList from './services/ServiceList';
-import ServiceView from './services/ServiceView';
+import ServiceList from './ServiceList';
+import ServiceView from './ServiceView';
 
 const Services = () => (
   <Switch>

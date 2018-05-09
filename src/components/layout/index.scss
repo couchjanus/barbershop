@@ -32,3 +32,11 @@ ul {
     }
   }
   
+.footer {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 2fr 3fr;
+    grid-template-rows: 1fr 1fr;
+}
+  .copyright{
+    color: red; 
+  }
